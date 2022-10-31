@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Post, UseGuards, UsePipes, ValidationPipe } from '@nestjs/common';
-import { JwtAuthGard } from 'src/auth/guards/jwt.guard';
-import { UserEmail } from 'src/decorators/user-email.decorator';
+import { JwtAuthGard } from '../auth/guards/jwt.guard';
+import { UserEmail } from '../decorators/user-email.decorator';
 import { CreateReviewDto } from './dto/create-review.dto';
 import { REVIEW_NOT_FOUND } from './review.constants';
 import { ReviewService } from './review.service';
